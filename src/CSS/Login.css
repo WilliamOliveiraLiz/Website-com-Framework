@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1E3147;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corBnt{
+    background-color: #7A828C;
+}
+
+
+.fundoLogin{
+    background-color: #E6E3DF;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
