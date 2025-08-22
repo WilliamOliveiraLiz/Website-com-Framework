@@ -1,8 +1,8 @@
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const user = document.getElementById("username").value;
-    const pass = document.getElementById("password").value;
+    const user = document.getElementById("username").value.trim();
+    const pass = document.getElementById("password").value.trim();
     const errorMessage = document.getElementById("error-message");
 
     // Exemplo de validação (fixo só para demonstração)
