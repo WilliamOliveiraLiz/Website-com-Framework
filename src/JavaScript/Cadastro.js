@@ -1,15 +1,15 @@
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
+    const name = document.getElementsById("name").value.trim();
     const user = document.getElementById("username").value.trim();
     const pass = document.getElementById("password").value.trim();
     const errorMessage = document.getElementById("error-message");
 
-    // Exemplo de validação (fixo só para demonstração)
-    if (user === "admin" && pass === "1234") {
-        alert("Login realizado com sucesso!");
-        window.location.href = "PaginaPrincipal.html"; // redireciona para outra página
+    if (name != name.isEmpty() && user != user.isEmpty() && pass != pass.isEmpty) {
+        alert("Cadastro realizado com sucesso!");
+        window.location.href = "Login.html";
     } else {
-        errorMessage.textContent = "Usuário ou senha inválidos!";
+        errorMessage.textContent = "Os campos não devem ficar vazios!";
     }
 });
