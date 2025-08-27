@@ -16,6 +16,12 @@ body {
     background-color: #E6E3DF;
     border-radius: 10px;
     padding: 20px;
+    min-width: 250px;
+    width: 50%;
 }
 
-
+.corBnt:hover {
+    background-color: #1E3147;
+    color: white;
+    transform: scale(1.05);
+}
