@@ -1,9 +1,8 @@
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
     const errorMessage = document.getElementById("error-message");
 
     const validEmail = "email";
@@ -13,7 +12,10 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         alert("Login bem-sucedido!");
         // window.location.href = "Home.html";
     } else {
-        alert("Nome de usuário ou senha incorretos.");
+        alert("E-mail ou senha incorretos.");
+        errorMessage.textContent = "E-mail ou senha incorretos.";
         errorMessage.style.display = "block";
     }
+
+    window.location.href = "Cadastro.html";
 });
