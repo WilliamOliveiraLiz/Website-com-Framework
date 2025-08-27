@@ -40,8 +40,6 @@ label{
     padding-left: 60px;
     padding-right: 60px;
     min-width: 300px;
- 
-
 }
 
 .btn{
@@ -52,9 +50,7 @@ label{
     width: 25%;
     color: white;
     font-weight: 700;
-    min-width: 100px;
-
-    
+    min-width: 100px; 
 }
 
 .btn:hover{
@@ -77,4 +73,3 @@ font-size: 16px;
 line-height: 28px;
 
 color: #7A828C;
-
