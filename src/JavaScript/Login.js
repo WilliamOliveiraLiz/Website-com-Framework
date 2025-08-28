@@ -17,5 +17,5 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         errorMessage.style.display = "block";
     }
 
-    window.location.href = "Cadastro.html";
+    // window.location.href = "Home.html";
 });
