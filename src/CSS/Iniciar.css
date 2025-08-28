@@ -1,14 +1,25 @@
+body{
+    background-color: #E6E3DF;
+}
+
 header{
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #1E3147;
+    color: white;
 }
 .logo{
     width: 70px;
     height: 70px;
 }
 
-*{
-    background-color: ;
+.carousel {
+    width: 75%;
+    margin: 120px auto 0; /* empurra para baixo (120px = altura do header + espaçamento) */
+    border-style: solid;
+    border-color: #1E3147;
+    border-width: 10px;
+    color: #1E3147;
+    
 }
