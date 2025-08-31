@@ -7,13 +7,73 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .corBnt{
     background-color: #7A828C;
 }
+
+h1{
+    font-family: 'Estedad-VF';
+    font-style: normal;
+    color: #7A828C;
+    text-align: center;
+    font-weight: 900;
+}
+
+label{
+    padding-left: 20px;
+    color: #7A828C;
+    font-size: 15px;
+}
+
+.borda{
+    border-radius: 50px;
+    min-width: 200px;
+}
+
 
 .fundoLogin{
     background-color: #E6E3DF;
     border-radius: 10px;
     padding: 20px;
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 60px;
+    min-width: 300px;
 }
+
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #7A828C;
+    border-radius: 50px;
+    width: 25%;
+    color: white;
+    font-weight: 700;
+    min-width: 100px; 
+}
+
+.btn:hover{
+    background-color: #1E3147;
+    color: white;
+    font-weight: bold;
+}
+
+a{
+    color: #1E3147;
+    font-weight: bolder;
+}
+
+
+/* LogIn 
+
+position: absolute;
+width: 42px;
+height: 28px;
+
+font-family: 'Estedad-VF';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 28px;
+
+color: #7A828C;
