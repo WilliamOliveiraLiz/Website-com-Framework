@@ -61,7 +61,7 @@ body {
 }
 
 .logo-img {
-  max-height: 40px;
+  max-height: 55px;
   width: auto;
   display: block;
   margin: 0 auto;
@@ -216,10 +216,10 @@ body {
 }
 
 .product-card {
-  width: 200px;
+  width: 350px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 10px;
+  padding: 15px;
   background: #fffbea;
   font-family: Arial, sans-serif;
   margin: 20px auto;
@@ -244,26 +244,26 @@ body {
 
 .product-title {
   font-weight: 700;
-  font-size: 14px;
-  margin: 5px 0 2px 0;
+  font-size: 18px;
+  margin: 8px 0 4px 0;
   color: #1E3147;
 }
 
 .product-description {
-  font-size: 12px;
+  font-size: 14px;
   color: #555;
-  margin: 0 0 6px 0;
+  margin: 0 0 8px 0;
 }
 
 .product-price {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   color: #1E3147;
   margin: 0;
 }
 
 .product-price-old {
-  font-size: 12px;
+  font-size: 14px;
   color: #999;
   margin: 0;
 }
