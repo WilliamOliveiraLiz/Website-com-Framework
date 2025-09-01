@@ -19,7 +19,7 @@ Este repositório contém um sistema web completo com telas de **login**, **cada
 ## 🚀 Como Executar
 * Clone este repositório com o comando:
 ```
-git clone <https://github.com/tainaestefani/task-manager.git>
+git clone <https://github.com/WilliamOliveiraLiz/Website-com-Framework.git>
 ```
 * Abra o arquivo "Login.html" no navegador de sua preferência.
 
