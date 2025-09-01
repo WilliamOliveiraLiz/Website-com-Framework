@@ -21,7 +21,7 @@ Este repositório contém um sistema web completo com telas de **login**, **cada
 ```
 git clone <https://github.com/tainaestefani/task-manager.git>
 ```
-* Abra o arquivo "ogin.html" no navegador de sua preferência.
+* Abra o arquivo "Login.html" no navegador de sua preferência.
 
 ## 🧑‍💻 Autores
 <table>
