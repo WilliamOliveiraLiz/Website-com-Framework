@@ -1,21 +1,22 @@
-body{
+body {
     background-color: #E6E3DF;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #1E3147;
     color: white;
     z-index: 9;
+    --bs-navbar-color: #ffffff;
 }
 
-header a{
-    color: #E6E3DF;
+.navbar {
+    --bs-navbar-color: #ffffff;
 }
 
-.logo{
+.logo {
     width: 70px;
     height: 70px;
 }
@@ -25,22 +26,22 @@ header a{
     max-width: 75%;
     height: 420px;
     min-width: 700px;
-    margin: 120px auto 0; /* empurra para baixo (120px = altura do header + espaçamento) */
+    margin: 120px auto 0;
     border-style: solid;
     border-color: #1E3147;
     border-width: 10px;
     color: #1E3147;
-    
+    border-radius: 30px;
+
 }
 
-.carousel img{
+.carousel img {
     height: 400px;
     width: 80%;
     min-width: 700px;
 }
 
-.card{
-    margin: 40px;
+.card {
     border-radius: 15px;
-    
+
 }
