@@ -4,60 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hardware Store</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/src/CSS/Produto.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="header-left">
-    <button class="menu-button" aria-label="Menu" id="menuToggle">☰</button>
+  <header class="header">
+    <div class="header-left">
+      <button class="menu-button" aria-label="Menu" id="menuToggle">☰</button>
+    </div>
+
+    <div class="header-center">
+      <img src="c:\Users\giovani_lenoir\Pictures\Screenshots\Captura de tela 2025-08-25 204521.png" alt="Logo" class="logo-img" />
+    </div>
+
+    <div class="header-right">
+      <div class="user-photo user-photo--svg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#E6E3DF" viewBox="0 0 24 24" width="32" height="32">
+          <path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12zm0 2.4c-3.3 0-9.8 1.7-9.8 5v2.4h19.6v-2.4c0-3.3-6.5-5-9.8-5z"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <button id="closeMenu" class="close-menu" aria-label="Fechar menu">×</button>
+    <ul class="mobile-menu-list">
+      <li><a href="#">Placas de Vídeo</a></li>
+      <li>
+        <button class="mobile-submenu-toggle">Memórias ▶</button>
+        <ul class="mobile-submenu">
+          <li><a href="#">DDR4</a></li>
+          <li><a href="#">DDR5</a></li>
+        </ul>
+      </li>
+      <li><a href="#">SSDs</a></li>
+    </ul>
   </div>
 
-  <div class="header-center">
-    <img src="c:\Users\giovani_lenoir\Pictures\Screenshots\Captura de tela 2025-08-25 204521.png" alt="Logo" class="logo-img" />
-  </div>
+  <div id="overlay" class="overlay"></div>
 
-  <div class="header-right">
-    <div class="user-photo user-photo--svg">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="#E6E3DF" viewBox="0 0 24 24" width="32" height="32">
-        <path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12zm0 2.4c-3.3 0-9.8 1.7-9.8 5v2.4h19.6v-2.4c0-3.3-6.5-5-9.8-5z"/>
-      </svg>
+  <div class="products-container">
+    <div class="product-card">
+      <img src="c:\Users\giovani_lenoir\Pictures\4.png" alt="Placa mãe" class="product-image" />
+      <div class="product-info">
+        <p class="product-title">Placa-mãe Msi A520m-a Pro Am4</p>
+        <p class="product-description">Matx Ddr4 Hdmi Dvi M.2</p>
+        <p class="product-price">R$475</p>
+        <p class="product-price-old">19x R$45,63</p>
+      </div>
     </div>
   </div>
-</header>
 
-<div id="mobileMenu" class="mobile-menu">
-  <button id="closeMenu" class="close-menu" aria-label="Fechar menu">×</button>
-  <ul class="mobile-menu-list">
-    <li><a href="#">Placas de Vídeo</a></li>
-    <li>
-      <button class="mobile-submenu-toggle">Memórias ▶</button>
-      <ul class="mobile-submenu">
-        <li><a href="#">DDR4</a></li>
-        <li><a href="#">DDR5</a></li>
-      </ul>
-    </li>
-    <li><a href="#">SSDs</a></li>
-  </ul>
-</div>
-
-<div id="overlay" class="overlay"></div>
-<div class="products-container">
-  <div class="product-card">
-    <img src="c:\Users\giovani_lenoir\Pictures\4.png" alt="Placa mae" class="product-image" />
-    <div class="product-info">
-     <p class="product-title">Placa-mãe Msi A520m-a Pro Am4</p>
-    <p class="product-description">Matx Ddr4 Hdmi Dvi M.2</p>
-    <p class="product-price">R$475</p>
-    <p class="product-price-old">19x R$45,63</p>
-    </div>
-  </div>
-  
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>

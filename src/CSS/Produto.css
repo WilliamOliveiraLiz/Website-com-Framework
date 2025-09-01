@@ -36,6 +36,14 @@ body {
   object-fit: cover;
 }
 
+.user-photo--svg {
+  background-color: #4A596B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .menu-button {
   background: transparent;
   border: 1.5px solid #E6E3DF;
@@ -47,18 +55,13 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .menu-button:hover {
   background-color: #364769;
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: #E6E3DF;
-}
-
 .logo-img {
-  max-height: 40px; 
+  max-height: 40px;
   width: auto;
   display: block;
   margin: 0 auto;
@@ -73,6 +76,7 @@ body {
   padding: 0.4rem 1rem;
   transition: background-color 0.3s ease;
 }
+
 .dropdown-button:hover,
 .dropdown-button:focus {
   background-color: #364769;
@@ -90,6 +94,7 @@ body {
   color: #E6E3DF !important;
   cursor: pointer;
 }
+
 .dropdown-item-custom:hover,
 .dropdown-item-custom:focus {
   background-color: #364769 !important;
@@ -99,6 +104,7 @@ body {
 .dropdown-submenu {
   position: relative;
 }
+
 .dropdown-submenu > .dropdown-menu-custom {
   top: 0;
   left: 100%;
@@ -106,6 +112,7 @@ body {
   margin-right: 0.1rem;
   border-radius: 0.25rem;
 }
+
 .dropdown-submenu > a::after {
   content: "▶";
   float: right;
@@ -117,12 +124,12 @@ body {
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: -280px;
+  left: -280px; 
   width: 280px;
   height: 100%;
   background-color: #1E3147;
   color: #E6E3DF;
-  box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
   padding: 1rem;
   overflow-y: auto;
   transition: left 0.3s ease;
@@ -190,7 +197,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
@@ -200,17 +207,6 @@ body {
 .overlay.active {
   opacity: 1;
   visibility: visible;
-}
-
-.user-photo--svg {
-  background-color: #4A596B;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
 }
 
 @media (max-width: 767.98px) {
@@ -227,12 +223,12 @@ body {
   background: #fffbea;
   font-family: Arial, sans-serif;
   margin: 20px auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .product-image {
@@ -242,7 +238,7 @@ body {
 }
 
 .product-info {
-  padding: 8px 0 0 0;
+  padding-top: 8px;
   text-align: left;
 }
 
