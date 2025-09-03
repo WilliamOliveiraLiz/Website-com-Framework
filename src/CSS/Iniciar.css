@@ -1,3 +1,19 @@
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    background: none;
+    color: #9e9ea9;
+    transition: color 0.2s;
+}
+
 body {
     background-color: #E6E3DF;
 }
@@ -12,6 +28,10 @@ header {
     --bs-navbar-color: #ffffff;
 }
 
+header:hover{
+    --bs-navbar-color: #b6b6b6;
+}
+
 .navbar {
     --bs-navbar-color: #ffffff;
 }
@@ -21,27 +41,128 @@ header {
     height: 70px;
 }
 
-
 .carousel {
-    max-width: 75%;
-    height: 420px;
-    min-width: 700px;
+    max-width: 82%;
     margin: 120px auto 0;
     border-style: solid;
     border-color: #1E3147;
     border-width: 10px;
     color: #1E3147;
     border-radius: 30px;
-
+    border: none;
+    transition: all 0.3s;
 }
 
 .carousel img {
-    height: 400px;
-    width: 80%;
-    min-width: 700px;
+    width: 100%;
+    height: 420px;
+    max-height: 420px;
+    min-height: 220px;
+    border-radius: 19px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-body a {
+    background-color: #7A828C !important;
+    color: #fff !important;
+    align-self: flex-end;
+    border-radius: 50px;
+    transition: background 0.2s;
+    border: none;
+}
+
+.card-body a:hover, .card-body a:focus {
+    background-color: #1E3147 !important;
+    color: #fff !important;
+}
+
+
+@media (max-width: 800px) {
+    .carousel {
+        max-width: 98vw;
+        min-width: 0;
+        height: 220px;
+        margin: 90px auto 0;
+        border-width: 5px;
+        border-radius: 18px;
+        margin-top: 70px;
+    }
+    .carousel img {
+    height: 200px;
+    max-height: 200px;
+    min-height: 120px;
+        min-width: 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .carousel {
+        height: 140px;
+        border-width: 3px;
+        border-radius: 10px;
+        margin: 50px auto 0;
+        margin-top: 110px;
+    }
+    .carousel img {
+    height: 120px;
+    max-height: 120px;
+    min-height: 80px;
+        border-radius: 6px;
+    }
 }
 
 .card {
-    border-radius: 15px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
 
+.card-img-top{
+    border-bottom-color: #1E3147;
+    border-bottom: 20px;
+    border: 20px;
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    min-height: 48px;
+}
+
+.card-text {
+    flex: 1 1 auto;
+    font-size: 0.98rem;
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+
+.card-body a {
+    background-color: #1E3147;
+    color: white;
+    align-self: flex-end;
+}
+
+.card-body a:hover {
+    background-color: #4670a0;
+    color: #1E3147;
+}
+
+.mt-4 {
+    height: max-content;
 }

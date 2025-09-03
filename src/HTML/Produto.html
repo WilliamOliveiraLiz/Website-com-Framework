@@ -9,55 +9,49 @@
   <link rel="stylesheet" href="/src/CSS/Produto.css">
 </head>
 <body>
-
-  <header class="header">
-    <div class="header-left">
-      <button class="menu-button" aria-label="Menu" id="menuToggle">☰</button>
-    </div>
-
-    <div class="header-center">
-      <img src="/src/img/logo-branco.png" alt="Logo" class="logo-img" />
-    </div>
-
-    <div class="header-right">
-      <div class="user-photo user-photo--svg">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#E6E3DF" viewBox="0 0 24 24" width="32" height="32">
-          <path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12zm0 2.4c-3.3 0-9.8 1.7-9.8 5v2.4h19.6v-2.4c0-3.3-6.5-5-9.8-5z"/>
-        </svg>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Iniciar.html"><img class="logo" src="../img/logo-branco.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-auto">
+            <a class="nav-link" href="#">Pesquisar</a>
+            <a class="nav-link" href="#">Categorias</a>
+            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="#">Ajuda</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
-
-  <div id="mobileMenu" class="mobile-menu">
-    <button id="closeMenu" class="close-menu" aria-label="Fechar menu">×</button>
-    <ul class="mobile-menu-list">
-      <li><a href="#">Placas de Vídeo</a></li>
-      <li>
-        <button class="mobile-submenu-toggle">Memórias ▶</button>
-        <ul class="mobile-submenu">
-          <li><a href="#">DDR4</a></li>
-          <li><a href="#">DDR5</a></li>
-        </ul>
-      </li>
-      <li><a href="#">SSDs</a></li>
-    </ul>
-  </div>
 
   <div id="overlay" class="overlay"></div>
 
-  <div class="products-container">
-    <div class="product-card">
-      <img src="/src/img/Produto.png" alt="Placa mãe" class="product-image" />
-      <div class="product-info">
-        <p class="product-title">Placa-mãe Msi A520m-a Pro Am4</p>
-        <p class="product-description">Matx Ddr4 Hdmi Dvi M.2</p>
-        <p class="product-price">R$475</p>
-        <p class="product-price-old">19x R$45,63</p>
+  <main class="produto-main container-fluid d-flex justify-content-center align-items-center mb-3" style="margin-top: 112px;">
+    <div class="produto-container row flex-lg-nowrap flex-wrap justify-content-center align-items-stretch w-100">
+      <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center justify-content-center produto-img-box bg-white">
+        <img src="/src/img/1.webp" class="produto-imagem-grande" alt="Placa de Vídeo Galax GeForce RTX 2060">
+      </div>
+      <div class="col-lg-5 col-md-8 col-12 produto-info-box bg-white text-dark d-flex flex-column justify-content-center">
+        <h2 class="produto-titulo">Placa de Vídeo Galax GeForce RTX 2060</h2>
+        <div class="produto-marca">Marca: <span>Galax</span></div>
+        <div class="produto-sku">SKU: RTX2060-GALAX</div>
+        <div class="produto-descricao">Excelente desempenho para jogos em Full HD e boa relação custo-benefício, ideal para quem busca performance em jogos atuais sem gastar muito.</div>
+        <div class="produto-preco-antigo">de R$ 1.988,22 por:</div>
+        <div class="produto-preco">R$ 1.299,99 <span class="produto-preco-avista">à vista</span></div>
+        <div class="produto-pix">no PIX com 15% desconto</div>
+        <div class="produto-preco-parcelado">R$ 1.529,40 <span>em até 12x de R$ 127,45 sem juros no cartão</span></div>
+        <button class="btn btn-primary w-100 mt-3 produto-btn-comprar">Comprar</button>
+        <div class="produto-aviso mt-2">* Imagens meramente ilustrativas. Consulte condições no site.</div>
       </div>
     </div>
-  </div>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
