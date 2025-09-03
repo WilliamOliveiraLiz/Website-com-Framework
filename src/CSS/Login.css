@@ -69,6 +69,8 @@ label {
 a {
     color: #1E3147;
     font-weight: bolder;
+    text-decoration: none;
+
 }
 
 .spanLogin {

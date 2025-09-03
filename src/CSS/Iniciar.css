@@ -8,8 +8,8 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
-    background: none;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
     color: #9e9ea9;
     transition: color 0.2s;
 }
@@ -28,7 +28,7 @@ header {
     --bs-navbar-color: #ffffff;
 }
 
-header:hover{
+header:hover {
     --bs-navbar-color: #b6b6b6;
 }
 
@@ -41,128 +41,105 @@ header:hover{
     height: 70px;
 }
 
+/* ====== CAROUSEL ====== */
 .carousel {
     max-width: 82%;
     margin: 120px auto 0;
-    border-style: solid;
-    border-color: #1E3147;
-    border-width: 10px;
-    color: #1E3147;
-    border-radius: 30px;
-    border: none;
+    border-radius: 20px;
     transition: all 0.3s;
 }
 
 .carousel img {
     width: 100%;
     height: 420px;
-    max-height: 420px;
-    min-height: 220px;
+    object-fit: cover;
     border-radius: 19px;
-    display: block;
-    margin: 0 auto;
 }
-
-.card-body a {
-    background-color: #7A828C !important;
-    color: #fff !important;
-    align-self: flex-end;
-    border-radius: 50px;
-    transition: background 0.2s;
-    border: none;
-}
-
-.card-body a:hover, .card-body a:focus {
-    background-color: #1E3147 !important;
-    color: #fff !important;
-}
-
 
 @media (max-width: 800px) {
     .carousel {
         max-width: 98vw;
-        min-width: 0;
-        height: 220px;
-        margin: 90px auto 0;
-        border-width: 5px;
-        border-radius: 18px;
-        margin-top: 70px;
+        margin-top: 90px;
     }
+
     .carousel img {
-    height: 200px;
-    max-height: 200px;
-    min-height: 120px;
-        min-width: 0;
-        width: 100%;
+        height: 200px;
         border-radius: 10px;
     }
 }
 
 @media (max-width: 500px) {
     .carousel {
-        height: 140px;
-        border-width: 3px;
-        border-radius: 10px;
-        margin: 50px auto 0;
         margin-top: 110px;
     }
+
     .carousel img {
-    height: 120px;
-    max-height: 120px;
-    min-height: 80px;
+        height: 140px;
         border-radius: 6px;
     }
 }
 
-.card {
-    height: 370px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-}
+@media (max-width: 320px) {
+    .carousel {
+        max-width: 98vw;
+        margin-top: 90px;
+        min-width: 320px;
+    }
 
-.card-img-top{
-    border-bottom-color: #1E3147;
-    border-bottom: 20px;
-    border: 20px;
-    width: 100%;
-    height: 140px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
+    .carousel img {
+        height: 200px;
+        border-radius: 10px;
+        min-width: 320px;
+    }
 
-.card-body {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 180px;
 }
+    /* ====== CARDS ====== */
+    .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
 
-.card-title {
-    font-size: 1.1rem;
-    min-height: 48px;
-}
+    }
 
-.card-text {
-    flex: 1 1 auto;
-    font-size: 0.98rem;
-    min-height: 80px;
-    margin-bottom: 10px;
-}
+    .card-img-top {
+        width: 100%;
+        height: 180px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
 
-.card-body a {
-    background-color: #1E3147;
-    color: white;
-    align-self: flex-end;
-}
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
 
-.card-body a:hover {
-    background-color: #4670a0;
-    color: #1E3147;
-}
+    .card-title {
+        font-size: 1.1rem;
+    }
 
-.mt-4 {
-    height: max-content;
-}
+    .card-text {
+        font-size: 0.95rem;
+        flex-grow: 1;
+    }
+
+    .card-body a {
+        background-color: #1E3147;
+        color: white !important;
+        border-radius: 50px;
+        text-align: center;
+        border: none;
+        padding: 6px 12px;
+    }
+
+    .card-body a:hover {
+        background-color: #4670a0;
+        color: #fff !important;
+    }
+
+    @media (max-width: 320px) {
+        .card {
+            min-width: 320px;
+        }
+    }
