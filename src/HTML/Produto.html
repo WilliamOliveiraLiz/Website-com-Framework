@@ -10,24 +10,26 @@
 </head>
 <body>
 
-  <header class="header">
-    <div class="header-left">
-      <button class="menu-button" aria-label="Menu" id="menuToggle">☰</button>
-    </div>
-
-    <div class="header-center">
-      <img src="c:\Users\giovani_lenoir\Pictures\Screenshots\Captura de tela 2025-08-25 204521.png" alt="Logo" class="logo-img" />
-    </div>
-
-    <div class="header-right">
-      <div class="user-photo user-photo--svg">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#E6E3DF" viewBox="0 0 24 24" width="32" height="32">
-          <path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12zm0 2.4c-3.3 0-9.8 1.7-9.8 5v2.4h19.6v-2.4c0-3.3-6.5-5-9.8-5z"/>
-        </svg>
-      </div>
-    </div>
-  </header>
-
+  <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="../img/logo-branco.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">Pesquisar</a>
+                        <a class="nav-link" href="#">Categorias</a>
+                        <a class="nav-link" href="#">Sobre</a>
+                        <a class="nav-link" href="#">Ajuda</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
   <div id="mobileMenu" class="mobile-menu">
     <button id="closeMenu" class="close-menu" aria-label="Fechar menu">×</button>
     <ul class="mobile-menu-list">

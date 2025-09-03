@@ -12,7 +12,7 @@ header {
     --bs-navbar-color: #ffffff;
 }
 
-header:hover{
+header:hover {
     --bs-navbar-color: #b6b6b6;
 }
 
@@ -55,24 +55,37 @@ header:hover{
     height: max-content;
     margin-bottom: 50px;
 
+
 }
 
-.card-img-top{
+@media (max-width: 550px) {
+    .card {
+        border-radius: 15px;
+        border-color: #1E3147;
+        padding: 5px;
+        height: max-content;
+        margin-bottom: 50px;
+        min-width: 550px;
+        margin-left: 60px;
+    }
+}
+
+.card-img-top {
     border-bottom-color: #1E3147;
     border-bottom: 20px;
     border: 20px;
 }
 
-.card-body a{
+.card-body a {
     background-color: #1E3147;
     color: white;
 }
 
-.card-body a:hover{
+.card-body a:hover {
     background-color: #4670a0;
     color: 1E3147;
 }
 
-.mt-4{
+.mt-4 {
     height: max-content;
 }
