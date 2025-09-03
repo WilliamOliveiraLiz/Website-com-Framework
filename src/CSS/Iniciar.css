@@ -25,52 +25,113 @@ header:hover{
     height: 70px;
 }
 
-
 .carousel {
     max-width: 82%;
-    height: 420px;
-    min-width: 700px;
     margin: 120px auto 0;
     border-style: solid;
     border-color: #1E3147;
     border-width: 10px;
     color: #1E3147;
     border-radius: 30px;
-
+    border: none;
+    transition: all 0.3s;
 }
 
 .carousel img {
-    height: 400px;
-    width: 80%;
-    min-width: 700px;
+    width: 100%;
+    height: 420px;
+    max-height: 420px;
+    min-height: 220px;
     border-radius: 19px;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s;
 }
 
+@media (max-width: 800px) {
+    .carousel {
+        max-width: 98vw;
+        min-width: 0;
+        height: 220px;
+        margin: 90px auto 0;
+        border-width: 5px;
+        border-radius: 18px;
+        margin-top: 70px;
+    }
+    .carousel img {
+    height: 200px;
+    max-height: 200px;
+    min-height: 120px;
+        min-width: 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
 
+@media (max-width: 500px) {
+    .carousel {
+        height: 140px;
+        border-width: 3px;
+        border-radius: 10px;
+        margin: 50px auto 0;
+        margin-top: 110px;
+    }
+    .carousel img {
+    height: 120px;
+    max-height: 120px;
+    min-height: 80px;
+        border-radius: 6px;
+    }
+}
 
 .card {
-    border-radius: 15px;
-    border-color: #1E3147;
-    padding: 5px;
-    height: max-content;
-    margin-bottom: 50px;
-
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .card-img-top{
     border-bottom-color: #1E3147;
     border-bottom: 20px;
     border: 20px;
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
+.card-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    min-height: 48px;
+}
+
+.card-text {
+    flex: 1 1 auto;
+    font-size: 0.98rem;
+    min-height: 80px;
+    margin-bottom: 10px;
 }
 
 .card-body a{
     background-color: #1E3147;
     color: white;
+    align-self: flex-end;
 }
 
 .card-body a:hover{
     background-color: #4670a0;
-    color: 1E3147;
+    color: #1E3147;
 }
 
 .mt-4{
